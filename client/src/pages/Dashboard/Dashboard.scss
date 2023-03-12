@@ -1,0 +1,46 @@
+.dashboard {
+    display: flex;
+    .sidebar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 50px 30px;
+        flex: 2;
+        background-color: black;
+        gap: 15px;
+        height: 500px;
+
+        .sidebarLink {
+            color: #fff;
+            font-size: 18px;
+            width: 100%;
+            background: -webkit-linear-gradient(#eee, #333);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+
+    .contents {
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+        align-items: center;
+        flex: 8;
+        padding: 0 30px;
+        height: 500px;
+        border-top: 1px solid #000;
+        .cards{
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px 0 #ccc;
+            height: 150px;
+            background-color: antiquewhite;
+        }
+    }
+
+}

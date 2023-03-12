@@ -1,0 +1,124 @@
+.create {
+    display: flex;
+    gap: 50px;
+    padding: 0px 150px;
+    margin: 40px 0;
+
+    .contents {
+        flex: 5;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        input {
+            padding: 10px;
+            outline: none;
+            word-break: break-all;
+        }
+        .editorContainer{
+            width: 100%;
+            height: 300px;
+            overflow-y: scroll;
+            border: 1px solid #000;
+            .editor{
+                height: 100%;
+                width: 100%;
+                border: none;
+                word-break: break-all;
+            }
+        }
+    }
+
+    .menu {
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .item1 {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            box-shadow: 5px 5px 5px #080808;
+            border: 2px solid #000;
+            border-radius: 10px;
+            padding: 10px;
+
+            h2 {
+                font-size: 20px;
+                text-align: center;
+            }
+
+            .status {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-size: 16px;
+                span{
+                    font-size: 14px;
+                }
+            }
+
+            label {
+                cursor: pointer;
+                border-radius: 30px;
+                background-color: #000;
+                width: fit-content;
+                text-align: center;
+                padding: 5px 15px;
+                color: #fff;
+                font-size: 15px;
+
+                &:hover {
+                    background-color: teal;
+                }
+            }
+
+            .buttons {
+                display: flex;
+                justify-content: space-between;
+                gap: 8px;
+                align-items: center;
+
+                button {
+                    cursor: pointer;
+                    border-radius: 30px;
+                    background-color: #000;
+                    width: fit-content;
+                    text-align: center;
+                    padding: 8px 15px;
+                    color: #fff;
+                    border: none;
+
+                    &:hover {
+                        background-color: teal;
+                    }
+                }
+            }
+        }
+
+        .item2{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            box-shadow: 5px 5px 5px #080808;
+            border: 2px solid #000;
+            border-radius: 10px;
+            padding: 10px;
+            h2{
+                font-size: 20px;
+                text-align: center;
+            }
+            .inputContainer{
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                label{
+                    font-size: 16px;
+                    font-weight: bold;
+                    color: teal;
+                }
+            }
+        }
+    }
+}

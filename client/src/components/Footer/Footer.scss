@@ -1,0 +1,20 @@
+.footer{
+    height: 140px;
+    background-color: teal;
+    .footerImg{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        img{
+            height: 100px;
+            width: 100px;
+            object-fit: contain;
+        }
+        span{
+            color: #000;
+            font-size: 14px;
+            font-weight: bold;
+        }
+    }
+}

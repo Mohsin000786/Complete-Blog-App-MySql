@@ -1,0 +1,53 @@
+.navbar {
+    display: flex;
+    padding: 0px 50px;
+    justify-content: space-between;
+    height: 70px;
+
+    .logo {
+        display: flex;
+        flex: 0.5;
+        justify-content: center;
+        align-content: center;
+
+        img {
+            height: 80px;
+            width: 80px;
+            object-fit: contain;
+            cursor: pointer;
+        }
+    }
+
+    .links {
+        display: flex;
+        flex: 3;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .profile {
+        display: flex;
+        flex: 0.5;
+        justify-content: end;
+        align-items: center;
+        gap: 10px;
+        position: relative;
+        img{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .createlink {
+            text-decoration: none;
+            border: none;
+            color: #fff;
+            font-size: 15px;
+            border-radius: 20px;
+            background: teal;
+            padding: 8px 20px;
+            cursor: pointer;
+        }
+    }
+}
